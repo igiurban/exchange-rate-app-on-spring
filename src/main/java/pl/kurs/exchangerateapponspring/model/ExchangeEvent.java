@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+import java.util.Objects;
 
 
 @Entity
@@ -66,5 +67,31 @@ public class ExchangeEvent implements Serializable {
 
     public BigDecimal getExchangeRate() {
         return exchangeRate;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ExchangeEvent that = (ExchangeEvent) o;
+        return Objects.equals(id, that.id) && Objects.equals(date, that.date) && Objects.equals(currencyFrom, that.currencyFrom) && Objects.equals(amountFrom, that.amountFrom) && Objects.equals(currencyTo, that.currencyTo) && Objects.equals(amountTo, that.amountTo) && Objects.equals(exchangeRate, that.exchangeRate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, date, currencyFrom, amountFrom, currencyTo, amountTo, exchangeRate);
+    }
+
+    @Override
+    public String toString() {
+        return "ExchangeEvent{" +
+                "id=" + id +
+                ", date=" + date +
+                ", currencyFrom='" + currencyFrom + '\'' +
+                ", amountFrom=" + amountFrom +
+                ", currencyTo='" + currencyTo + '\'' +
+                ", amountTo=" + amountTo +
+                ", exchangeRate=" + exchangeRate +
+                '}';
     }
 }
