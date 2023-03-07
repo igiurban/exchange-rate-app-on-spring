@@ -1,7 +1,9 @@
 package pl.kurs.exchangerateapponspring.services;
 
-import pl.kurs.exchangerateapp.exceptions.ConnectionProblemsException;
-import pl.kurs.exchangerateapp.exceptions.InvalidInputDataException;
+
+
+import pl.kurs.exchangerateapponspring.exceptions.ConnectionProblemsException;
+import pl.kurs.exchangerateapponspring.exceptions.InvalidInputDataException;
 
 import java.math.BigDecimal;
 
