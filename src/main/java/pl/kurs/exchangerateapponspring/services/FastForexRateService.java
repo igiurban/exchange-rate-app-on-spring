@@ -3,8 +3,8 @@ package pl.kurs.exchangerateapponspring.services;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
-import pl.kurs.exchangerateapp.exceptions.ConnectionProblemsException;
-import pl.kurs.exchangerateapp.exceptions.InvalidInputDataException;
+import pl.kurs.exchangerateapponspring.exceptions.ConnectionProblemsException;
+import pl.kurs.exchangerateapponspring.exceptions.InvalidInputDataException;
 
 import java.io.IOException;
 import java.math.BigDecimal;
