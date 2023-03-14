@@ -1,9 +1,9 @@
 package pl.kurs.exchangerateapponspring.services;
 
 import org.springframework.stereotype.Service;
-import pl.kurs.exchangerateapp.exceptions.ConnectionProblemsException;
-import pl.kurs.exchangerateapp.exceptions.InvalidInputDataException;
-import pl.kurs.exchangerateapp.model.ExchangeEvent;
+import pl.kurs.exchangerateapponspring.exceptions.ConnectionProblemsException;
+import pl.kurs.exchangerateapponspring.exceptions.InvalidInputDataException;
+import pl.kurs.exchangerateapponspring.model.ExchangeEvent;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
