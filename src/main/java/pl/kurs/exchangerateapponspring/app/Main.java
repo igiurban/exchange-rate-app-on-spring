@@ -11,7 +11,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
-@ComponentScan(basePackages = "pl.kurs.exchangerateapp")
+@ComponentScan(basePackages = "pl.kurs.exchangerateapponspring")
 public class Main {
     public static void main(String[] args) {
 
