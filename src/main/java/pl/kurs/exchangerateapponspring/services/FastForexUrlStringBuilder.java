@@ -1,7 +1,7 @@
 package pl.kurs.exchangerateapponspring.services;
 
 import org.springframework.stereotype.Service;
-import pl.kurs.exchangerateapp.config.AppConfig;
+import pl.kurs.exchangerateapponspring.config.AppConfig;
 
 @Service
 public class FastForexUrlStringBuilder implements IUrlStringBuilder{
